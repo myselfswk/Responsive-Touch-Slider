@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Responsive Touch Slider Using Html CSS & Swiper.js</title>
+    <link rel="shortcut icon" href="./Images/SliderIcon.ico" type="image/x-icon">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./swiper.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+</head>
+
+<body>
+    <h1 class="slider-H">Smooth Slider</h1>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/FeaturedProductOne.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Orangi Check Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/FeaturedProductTwo.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Green Design Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/FeaturedProductThree.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Light Design Sirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/FeaturedProductFour.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Black Flower Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/newArrivalsProductOne.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Light Red Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/newArrivalsProductTwo.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Light Green Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/newArrivalsProductThree.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Black Design Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/newArrivalsProductFour.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Black Dotted Shirt<br /><span>700Rps</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="text/JavaScript" src="./swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            initialSlide: 3,
+            effect: 'coverflow', // 'slide', 'fade', 'cube', 'flip'
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            speed: 500,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 400,
+                modifier: 1,
+                slideShadows: true,
+            },
+            direction: 'horizontal',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
